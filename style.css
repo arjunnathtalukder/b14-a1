@@ -1,0 +1,324 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    background:#fff;
+}
+
+header{
+    width:100%;
+    background:#ffffff;
+    border-bottom:1px solid #eee;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 20px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    width:34px;
+    height:34px;
+    background:#1f2635;
+    color:#fff;
+    border-radius:8px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.logo h2 p{
+    font-weight:800;
+    color:#0b1220;
+    line-height:1;
+}
+
+.logo span{
+    font-size:13px;
+    color:#1040ff;
+}
+
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+     text-decoration:none; 
+    color:#4b5563;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+
+.btn{
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* 
+   HERO SECTION */
+
+.hero{
+    width:100%;
+    height:90%;
+
+    background:url("./assets/banner.jpg") center/cover no-repeat;
+    position:relative;
+}
+.overlay{
+    width:100%;
+    height:100%;
+
+    background:rgba(0, 0, 0, 0.65);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+    color:#ffffff;
+}
+
+.hero-content h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:2;
+    margin-top:30px; 
+}
+
+.hero-content h1 em{
+    font-style:italic;
+    font-weight:800;
+}
+
+.hero-content p{
+    font-size:15px;
+    color:#e5e7eb;
+    line-height:1.8;
+    margin-bottom:250px;
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+
+    background:#2563eb;
+    color:#fff;
+
+    padding:16px 38px;
+    border-radius:10px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.speakers-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    color: #222;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.speaker-grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.speaker-card {
+    background: #ffffff;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 1%;
+    transition: 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-6px);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 300px;
+    object-fit:fill;
+}
+
+.speaker-info {
+    padding: 20px;
+}
+
+.track {
+    display: inline-block;
+    color: #1d4ed8;
+    margin-bottom: 1px;
+}
+
+.speaker-info h3 {
+    margin: 10px 0 ;
+    font-size: 24px;
+    color: #222;
+}
+
+.speaker-info p {
+    color: #666;
+    font-size: 16px;
+}
+/* Pricing Section */
+
+.pricing-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.pricing-section h2{
+    font-size:45px;
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.subtitle{
+    color:#6b7280;
+    margin-bottom:50px;
+    font-size:17px;
+}
+
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.pricing-card{
+    background:#ffffff;
+    width:330px;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+}
+
+.pricing-card .plan{
+    color:#6b7280;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.pricing-card h3{
+    font-size:48px;
+    margin:10px 0 5px;
+    color:#111827;
+}
+
+.price-text{
+    color:#777;
+    margin-bottom:25px;
+}
+
+.pricing-card ul{
+    list-style:disc;
+    padding-left:20px;
+    flex:1;
+}
+
+.pricing-card ul li{
+    margin:12px 0;
+    color:#444;
+    font-size:15px;
+}
+
+.pricing-card button{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    border:1px solid #2563eb;
+    border-radius:8px;
+    background:#fff;
+    color:#2563eb;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.pricing-card button:hover{
+    background:#2563eb;
+    color:#fff;
+}
+.featured{
+    background:#0f172a;
+    color:#fff;
+    transform:scale(1.05);
+}
+
+.featured h3,
+.featured .plan,
+.featured .price-text,
+.featured ul li{
+    color:#fff;
+}
+
+.featured button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+}
+
+.featured button:hover{
+    background:#1d4ed8;
+}
