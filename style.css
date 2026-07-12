@@ -247,7 +247,7 @@ header{
     border-radius:12px;
     border:1px solid #ddd;
     text-align:left;
-    display:flex;
+     display:flex; 
     flex-direction:column;
 }
 
@@ -340,10 +340,10 @@ header{
     color:#3b82f6;
     
 }
-.footer-top{
-    display: block;
-    flex-direction: column;
-    gap: 10px;
+.footer-logo{
+    display:flex;
+    justify-content:flex-start;
+    gap: 10px;  
 }
 .footer hr{
     border:none;
@@ -355,8 +355,4 @@ header{
     text-align:center;
     color:#cbd5e1;
     font-size:15px;
-}
-.footer-logo img{
-    width: 30opx;
-    height: 30px;
 }
